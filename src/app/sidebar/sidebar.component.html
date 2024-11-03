@@ -1,0 +1,15 @@
+<div class="sidebar" [ngClass]="{'collapsed': isCollapsed}">
+    <div class="sidebar-header">
+       <i class=" pi pi-align-left" (click)="toggleSidebar()" style="font-size: 1.5rem"></i> 
+        <!-- <i class="pi"   [ngClass]="{'pi-align-left': !isCollapsed}"></i> -->
+    </div>  
+    <ul class="list-unstyled components">
+      <li *ngFor="let item of menuItems">
+        <a href="#">
+          <i [ngClass]="item.icon" style="font-size: 1.5rem"></i>
+          <span *ngIf="!isCollapsed" class="items">{{ item.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+

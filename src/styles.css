@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+*{
+    font-family: "Panoptica Sans Regular";
+    color: #465B75;
+}
+.content {
+    margin-left: 290px; /* Default margin */
+    transition: margin-left 0.3s;
+    background-color: #F8F9FA;
+  }
+  
+  .shifted {
+    margin-left: 80px; /* Margin when sidebar is collapsed */
+  }
+  

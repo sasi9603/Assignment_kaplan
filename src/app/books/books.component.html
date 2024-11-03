@@ -1,0 +1,39 @@
+<mat-card appearance="outlined">
+  <mat-card-content><img src="../../assets/images/ATOM_logo.png" alt="png" class="logo"></mat-card-content>
+</mat-card>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-10">
+            <b><h1>Books</h1></b>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary mt-4 create-btn">Create New Book</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <mat-form-field>
+                <mat-label class="custom-label">Search</mat-label>
+                <mat-icon matPrefix class="custom-icon">search</mat-icon>
+                <input matInput placeholder="Search" [(ngModel)]="searchText" />
+              </mat-form-field>    
+        </div>
+    </div>  
+    <div class="row">
+    <h2 class="mb-4">All Books</h2>
+      <div *ngFor="let book of filteredBooks" class="col-md-6 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title">{{ book.volumeInfo.title }}</h3>
+            <p class="card-text"><strong>Authors:</strong> {{ book.volumeInfo.authors.join(', ') }}</p>
+            <p class="card-text"><strong>Publisher:</strong> {{ book.volumeInfo.publisher }}</p>
+            <p class="card-text"><strong>Published Date:</strong> {{ book.volumeInfo.publishedDate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+  

@@ -1,0 +1,38 @@
+.sidebar {
+    width: 276px;
+    background: #fff;
+    height: 100vh;
+    position: fixed;
+    transition: width 0.3s;
+  }
+  
+  .sidebar.collapsed {
+    width: 80px;
+  }
+  
+  .sidebar-header {
+    padding: 15px;
+    color: white;
+    text-align: left;
+  }
+  
+  ul.components {
+    padding: 0;
+  }
+  
+  ul.components li {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  ul.components li a {
+    color: #333;
+    text-decoration: none;
+  }
+  .items{
+    padding-left: 26px;
+    font-size: 18px;
+  }
+  
+
+ 
