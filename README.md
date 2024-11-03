@@ -1,3 +1,37 @@
+Tittle: ATOM (Kaplan Assignement)
+Description: This is an Angular application that serves as a platform for managing books in a library, allowing users to search, view, and add books to the catalog.
+
+Technologies Used
+Framework: Angular 13+
+Styling: Bootstrap,CSS,PrimeNG
+State Management: NgRx
+Backend Integration: HTTP Client
+
+Steps:
+1.Node.js and npm installed on your machine.
+2.Angular CLI installed globally:
+    npm install -g @angular/cli
+
+3.Clone the repository:
+    git clone "https://github.com/sasi9603/Assignment_kaplan.git"
+
+4.Navigate to the project directory:
+    cd your-repo
+
+5.Install dependencies:
+    npm install
+
+6.Run the development server:
+    ng serve / npm start
+
+7.Open your browser and go to http://localhost:4200
+
+Scripts
+ng serve: Start the development server.
+ng build: Build the application for production.
+ng test: Run unit tests.
+ng testCoverage: to check code coverage.
+
 
 
 # KaplanAssignment
